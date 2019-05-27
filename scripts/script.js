@@ -132,9 +132,9 @@ $('window').ready(() => {
     ]
       }
 
-      var startYear = 1973;
-      var endYear = 2016;
-      var currentYear = 1995;
+      var startYear = 2016;
+      var endYear = 2018;
+      var currentYear = 2016;
       var colorSet = new am4core.ColorSet();
 
       var chart = am4core.create("chartdiv", am4charts.RadarChart);
