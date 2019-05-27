@@ -2,21 +2,25 @@
 
 One Paragraph of project description goes here
 
+
 ## Built With
 
-* [Bootstrap](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
+* [Bootstrap](https://getbootstrap.com/) - an open source toolkit for developing with HTML, CSS, and JS
 
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [Contribution guidelines for this project](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **First Name Last Name** - [User](https://github.com/User)
+* **First Name Last Name** - [User](https://github.com/User)
+* **First Name Last Name** - [User](https://github.com/User)
+* **First Name Last Name** - [Uesr](https://github.com/User)
+* **Neil Mispelaar** - [neilmispelaar](https://github.com/neilmispelaar)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
 
