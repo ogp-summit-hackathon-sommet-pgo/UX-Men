@@ -1,46 +1,112 @@
 <!doctype html>
-<html>
+<html class="no-js" lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>UX-Men Hackathon</title>
-	<!--FontAwesome-->
+    
+    <title>UX-Men Hackathon</title>
+    
+    <!--CSSReset-->
+    <link href="styles/vendor/cssreset.css" rel="stylesheet">
+    
+    <!--FontAwesome-->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
-	<!--Bootstrap-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="styles/vendor/bootstrap.min.css" />
 
-	<!--Custom styles-->
-	<link href="styles/styles.css" rel="stylesheet">
+    <!--Custom project styles-->
+    <link href="styles/styles.css" rel="stylesheet">
+
+    <!-- Remove the no-js class from the HTML element -->
+    <script>
+        document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+    </script>
+
 </head>
 
 <body>
-	<div id="wrapper">
-		<div id="header">
-			<div class="container">
-				<h1>Hackathon <i class="fas fa-chart-bar"></i></h1>
-			</div>
-		</div>
 
-		<div id="content">
-			<div class="container" id=chart-container>
-				<div id="chartdiv"></div>
-			</div>
-		</div>
-	</div>
+    <!--[if IE]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
 
-
-
-	<!--Bootstrap-->
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-	<!--JQuery-->
-    <script src="scripts/vendor/jquery-3.4.1.min.js"></script>
+    <section class="sr-only">
+        <h2>Accessibility Shortcuts</h2>
+            <p><a href="#maincontent">Skip to main content</a></p>
+    </section>
     
+
+    <header>
+
+        <!-- Just an image -->
+        <nav class="navbar navbar-dark">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-chart-bar"></i>
+                Canadian Opioid Review
+            </a>
+        </nav>
+
+        
+    </header>
+
+    <main>
+        <div class="container-fluid jumbotron-background">
+            <div class="container">
+                <div class="jumbotron">
+                    <h1 class="display-4">Opioid Data!</h1>
+                    <p class="lead">Fugiat aliquip exercitation ea occaecat ea eiusmod. Duis nisi tempor laboris do adipisicing duis cillum.</p>
+                    <!--
+                    <hr class="my-4">
+                    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                    -->
+                </div>
+            </div>
+        </div>
+       
+<!-- 
+<div class="container py-5 px-md-5">
+            <h2 class="display-2 text-center text-sm-left">Opiod Statistics for Canada</h2>
+        </div>
+        
+
+-->
+
+        <div class="container">
+            <h1 class="sr-only" id="maincontent">Hackathon</h1>
+
+            <div class="row my-5">
+                <div class="col-md-4">
+                    <h2 class="text-center">What's my risk?</h2>
+                </div>
+                <div class="col-md-8">
+                    <h2 class="text-center">Chart</h2>
+                    <!-- Container that has the chart -->
+                    <div class="chart-container">
+                        <div id="chartdiv"></div>
+                    </div>
+                </div>
+            </div>
+                    
+        </div>
+
+    </main>
+
+    <footer>
+        <p class="text-center">Footer goes here</p>
+    </footer>
+
     <!--modernizr -->
     <script src="scripts/vendor/modernizr-3.7.1.min.js"></script>
+
+    <!--JQuery-->
+    <script src="scripts/vendor/jquery-3.4.1.min.js"></script>
+    
+    <!--Bootstrap-->
+    <script src="scripts/vendor/bootstrap.bundle.min.js"></script>
 
 	<!--AM Charts-->
 	<script src="https://www.amcharts.com/lib/4/core.js"></script>
