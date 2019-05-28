@@ -8,19 +8,19 @@
     
     <title>UX-Men Hackathon</title>
     
+    <!--CSSReset-->
+    <link href="styles/vendor/cssreset.css" rel="stylesheet">
+    
     <!--FontAwesome-->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
     <!--Bootstrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
-    <!--CSSReset-->
-	<link href="styles/vendor/cssreset.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/vendor/bootstrap.min.css" />
 
     <!--Custom project styles-->
     <link href="styles/styles.css" rel="stylesheet">
 
-    <!-- Remove the no-js class from the HTML element --> 
+    <!-- Remove the no-js class from the HTML element -->
     <script>
         document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
     </script>
@@ -33,23 +33,71 @@
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
 
-    <div class="container">
-        <h1>Test</h1>
-    </div>
+    <section class="sr-only">
+        <h2>Accessibility Shortcuts</h2>
+            <p><a href="#maincontent">Skip to main content</a></p>
+    </section>
+    
 
-	<div id="wrapper">
-		<div id="header">
-			<div class="container">
-				<h1>Hackathon <i class="fas fa-chart-bar"></i></h1>
-			</div>
-		</div>
+    <header>
 
-		<div id="content">
-			<div class="container" id=chart-container>
-				<div id="chartdiv"></div>
-			</div>
-		</div>
-	</div>
+        <!-- Just an image -->
+        <nav class="navbar navbar-dark">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-chart-bar"></i>
+                Canadian Opioid Review
+            </a>
+        </nav>
+
+        
+    </header>
+
+    <main>
+        <div class="container-fluid jumbotron-background">
+            <div class="container">
+                <div class="jumbotron">
+                    <h1 class="display-4">Opioid Data!</h1>
+                    <p class="lead">Fugiat aliquip exercitation ea occaecat ea eiusmod. Duis nisi tempor laboris do adipisicing duis cillum.</p>
+                    <!--
+                    <hr class="my-4">
+                    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                    -->
+                </div>
+            </div>
+        </div>
+       
+<!-- 
+<div class="container py-5 px-md-5">
+            <h2 class="display-2 text-center text-sm-left">Opiod Statistics for Canada</h2>
+        </div>
+        
+
+-->
+
+        <div class="container">
+            <h1 class="sr-only" id="maincontent">Hackathon</h1>
+
+            <div class="row my-5">
+                <div class="col-md-4">
+                    <h2 class="text-center">What's my risk?</h2>
+                </div>
+                <div class="col-md-8">
+                    <h2 class="text-center">Chart</h2>
+                    <!-- Container that has the chart -->
+                    <div class="chart-container">
+                        <div id="chartdiv"></div>
+                    </div>
+                </div>
+            </div>
+                    
+        </div>
+
+    </main>
+
+    <footer>
+        <p class="text-center">Footer goes here</p>
+    </footer>
 
     <!--modernizr -->
     <script src="scripts/vendor/modernizr-3.7.1.min.js"></script>
